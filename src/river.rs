@@ -46,7 +46,7 @@ pub fn food_status(pounds: Option<u32>) -> &'static str {
     match pounds {
         None => "no record",
         Some(0) => "out of food",
-        Some(n) if n > 50 => "running low",
+        Some(n) if n <= 50 => "running low",
         Some(_) => "well stocked",
     }
 }
