@@ -22,7 +22,7 @@
 pub fn crossing_advice(depth_ft: u32) -> &'static str {
     match depth_ft {
         0..=2 => "ford",
-        3..5 => "caulk",
+        3..=5 => "caulk",
         _ => "ferry",
     }
 }
